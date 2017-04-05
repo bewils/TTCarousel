@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C49734831E9529C1002FE3BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49734821E9529C1002FE3BB /* AppDelegate.swift */; };
+		C49734851E9529C1002FE3BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49734841E9529C1002FE3BB /* ViewController.swift */; };
+		C49734881E9529C1002FE3BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49734861E9529C1002FE3BB /* Main.storyboard */; };
+		C497348A1E9529C1002FE3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49734891E9529C1002FE3BB /* Assets.xcassets */; };
+		C497348D1E9529C1002FE3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C497348B1E9529C1002FE3BB /* LaunchScreen.storyboard */; };
+		C49734981E9529C1002FE3BB /* TTCarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49734971E9529C1002FE3BB /* TTCarouselTests.swift */; };
+		C49734A31E9529C1002FE3BB /* TTCarouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49734A21E9529C1002FE3BB /* TTCarouselUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C49734941E9529C1002FE3BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C49734771E9529C0002FE3BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C497347E1E9529C0002FE3BB;
+			remoteInfo = TTCarousel;
+		};
+		C497349F1E9529C1002FE3BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C49734771E9529C0002FE3BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C497347E1E9529C0002FE3BB;
+			remoteInfo = TTCarousel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C497347F1E9529C1002FE3BB /* TTCarousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTCarousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49734821E9529C1002FE3BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C49734841E9529C1002FE3BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C49734871E9529C1002FE3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C49734891E9529C1002FE3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C497348C1E9529C1002FE3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C497348E1E9529C1002FE3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49734931E9529C1002FE3BB /* TTCarouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTCarouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49734971E9529C1002FE3BB /* TTCarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCarouselTests.swift; sourceTree = "<group>"; };
+		C49734991E9529C1002FE3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C497349E1E9529C1002FE3BB /* TTCarouselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTCarouselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49734A21E9529C1002FE3BB /* TTCarouselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCarouselUITests.swift; sourceTree = "<group>"; };
+		C49734A41E9529C1002FE3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C497347C1E9529C0002FE3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C49734901E9529C1002FE3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C497349B1E9529C1002FE3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C49734761E9529C0002FE3BB = {
+			isa = PBXGroup;
+			children = (
+				C49734811E9529C1002FE3BB /* TTCarousel */,
+				C49734961E9529C1002FE3BB /* TTCarouselTests */,
+				C49734A11E9529C1002FE3BB /* TTCarouselUITests */,
+				C49734801E9529C1002FE3BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C49734801E9529C1002FE3BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C497347F1E9529C1002FE3BB /* TTCarousel.app */,
+				C49734931E9529C1002FE3BB /* TTCarouselTests.xctest */,
+				C497349E1E9529C1002FE3BB /* TTCarouselUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C49734811E9529C1002FE3BB /* TTCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				C49734821E9529C1002FE3BB /* AppDelegate.swift */,
+				C49734841E9529C1002FE3BB /* ViewController.swift */,
+				C49734861E9529C1002FE3BB /* Main.storyboard */,
+				C49734891E9529C1002FE3BB /* Assets.xcassets */,
+				C497348B1E9529C1002FE3BB /* LaunchScreen.storyboard */,
+				C497348E1E9529C1002FE3BB /* Info.plist */,
+			);
+			path = TTCarousel;
+			sourceTree = "<group>";
+		};
+		C49734961E9529C1002FE3BB /* TTCarouselTests */ = {
+			isa = PBXGroup;
+			children = (
+				C49734971E9529C1002FE3BB /* TTCarouselTests.swift */,
+				C49734991E9529C1002FE3BB /* Info.plist */,
+			);
+			path = TTCarouselTests;
+			sourceTree = "<group>";
+		};
+		C49734A11E9529C1002FE3BB /* TTCarouselUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C49734A21E9529C1002FE3BB /* TTCarouselUITests.swift */,
+				C49734A41E9529C1002FE3BB /* Info.plist */,
+			);
+			path = TTCarouselUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C497347E1E9529C0002FE3BB /* TTCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C49734A71E9529C1002FE3BB /* Build configuration list for PBXNativeTarget "TTCarousel" */;
+			buildPhases = (
+				C497347B1E9529C0002FE3BB /* Sources */,
+				C497347C1E9529C0002FE3BB /* Frameworks */,
+				C497347D1E9529C0002FE3BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTCarousel;
+			productName = TTCarousel;
+			productReference = C497347F1E9529C1002FE3BB /* TTCarousel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C49734921E9529C1002FE3BB /* TTCarouselTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C49734AA1E9529C1002FE3BB /* Build configuration list for PBXNativeTarget "TTCarouselTests" */;
+			buildPhases = (
+				C497348F1E9529C1002FE3BB /* Sources */,
+				C49734901E9529C1002FE3BB /* Frameworks */,
+				C49734911E9529C1002FE3BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C49734951E9529C1002FE3BB /* PBXTargetDependency */,
+			);
+			name = TTCarouselTests;
+			productName = TTCarouselTests;
+			productReference = C49734931E9529C1002FE3BB /* TTCarouselTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C497349D1E9529C1002FE3BB /* TTCarouselUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C49734AD1E9529C1002FE3BB /* Build configuration list for PBXNativeTarget "TTCarouselUITests" */;
+			buildPhases = (
+				C497349A1E9529C1002FE3BB /* Sources */,
+				C497349B1E9529C1002FE3BB /* Frameworks */,
+				C497349C1E9529C1002FE3BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C49734A01E9529C1002FE3BB /* PBXTargetDependency */,
+			);
+			name = TTCarouselUITests;
+			productName = TTCarouselUITests;
+			productReference = C497349E1E9529C1002FE3BB /* TTCarouselUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C49734771E9529C0002FE3BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "李锐";
+				TargetAttributes = {
+					C497347E1E9529C0002FE3BB = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 4ERNHDBJN5;
+						ProvisioningStyle = Automatic;
+					};
+					C49734921E9529C1002FE3BB = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 4ERNHDBJN5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C497347E1E9529C0002FE3BB;
+					};
+					C497349D1E9529C1002FE3BB = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 4ERNHDBJN5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C497347E1E9529C0002FE3BB;
+					};
+				};
+			};
+			buildConfigurationList = C497347A1E9529C0002FE3BB /* Build configuration list for PBXProject "TTCarousel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C49734761E9529C0002FE3BB;
+			productRefGroup = C49734801E9529C1002FE3BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C497347E1E9529C0002FE3BB /* TTCarousel */,
+				C49734921E9529C1002FE3BB /* TTCarouselTests */,
+				C497349D1E9529C1002FE3BB /* TTCarouselUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C497347D1E9529C0002FE3BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C497348D1E9529C1002FE3BB /* LaunchScreen.storyboard in Resources */,
+				C497348A1E9529C1002FE3BB /* Assets.xcassets in Resources */,
+				C49734881E9529C1002FE3BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C49734911E9529C1002FE3BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C497349C1E9529C1002FE3BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C497347B1E9529C0002FE3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49734851E9529C1002FE3BB /* ViewController.swift in Sources */,
+				C49734831E9529C1002FE3BB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C497348F1E9529C1002FE3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49734981E9529C1002FE3BB /* TTCarouselTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C497349A1E9529C1002FE3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49734A31E9529C1002FE3BB /* TTCarouselUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C49734951E9529C1002FE3BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C497347E1E9529C0002FE3BB /* TTCarousel */;
+			targetProxy = C49734941E9529C1002FE3BB /* PBXContainerItemProxy */;
+		};
+		C49734A01E9529C1002FE3BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C497347E1E9529C0002FE3BB /* TTCarousel */;
+			targetProxy = C497349F1E9529C1002FE3BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C49734861E9529C1002FE3BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C49734871E9529C1002FE3BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C497348B1E9529C1002FE3BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C497348C1E9529C1002FE3BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C49734A51E9529C1002FE3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C49734A61E9529C1002FE3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C49734A81E9529C1002FE3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4ERNHDBJN5;
+				INFOPLIST_FILE = TTCarousel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lirui.TTCarousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C49734A91E9529C1002FE3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4ERNHDBJN5;
+				INFOPLIST_FILE = TTCarousel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lirui.TTCarousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C49734AB1E9529C1002FE3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4ERNHDBJN5;
+				INFOPLIST_FILE = TTCarouselTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lirui.TTCarouselTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTCarousel.app/TTCarousel";
+			};
+			name = Debug;
+		};
+		C49734AC1E9529C1002FE3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4ERNHDBJN5;
+				INFOPLIST_FILE = TTCarouselTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lirui.TTCarouselTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTCarousel.app/TTCarousel";
+			};
+			name = Release;
+		};
+		C49734AE1E9529C1002FE3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4ERNHDBJN5;
+				INFOPLIST_FILE = TTCarouselUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lirui.TTCarouselUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TTCarousel;
+			};
+			name = Debug;
+		};
+		C49734AF1E9529C1002FE3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4ERNHDBJN5;
+				INFOPLIST_FILE = TTCarouselUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lirui.TTCarouselUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TTCarousel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C497347A1E9529C0002FE3BB /* Build configuration list for PBXProject "TTCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49734A51E9529C1002FE3BB /* Debug */,
+				C49734A61E9529C1002FE3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C49734A71E9529C1002FE3BB /* Build configuration list for PBXNativeTarget "TTCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49734A81E9529C1002FE3BB /* Debug */,
+				C49734A91E9529C1002FE3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C49734AA1E9529C1002FE3BB /* Build configuration list for PBXNativeTarget "TTCarouselTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49734AB1E9529C1002FE3BB /* Debug */,
+				C49734AC1E9529C1002FE3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C49734AD1E9529C1002FE3BB /* Build configuration list for PBXNativeTarget "TTCarouselUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49734AE1E9529C1002FE3BB /* Debug */,
+				C49734AF1E9529C1002FE3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C49734771E9529C0002FE3BB /* Project object */;
+}
