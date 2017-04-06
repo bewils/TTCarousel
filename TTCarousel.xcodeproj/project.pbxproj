@@ -14,6 +14,8 @@
 		C497348D1E9529C1002FE3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C497348B1E9529C1002FE3BB /* LaunchScreen.storyboard */; };
 		C49734981E9529C1002FE3BB /* TTCarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49734971E9529C1002FE3BB /* TTCarouselTests.swift */; };
 		C49734A31E9529C1002FE3BB /* TTCarouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49734A21E9529C1002FE3BB /* TTCarouselUITests.swift */; };
+		C49734B21E952BB9002FE3BB /* TTCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49734B11E952BB9002FE3BB /* TTCarousel.swift */; };
+		C49734B41E952CAD002FE3BB /* TTCarouselIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49734B31E952CAC002FE3BB /* TTCarouselIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C497349E1E9529C1002FE3BB /* TTCarouselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTCarouselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49734A21E9529C1002FE3BB /* TTCarouselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCarouselUITests.swift; sourceTree = "<group>"; };
 		C49734A41E9529C1002FE3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49734B11E952BB9002FE3BB /* TTCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCarousel.swift; sourceTree = "<group>"; };
+		C49734B31E952CAC002FE3BB /* TTCarouselIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCarouselIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,11 @@
 		C49734811E9529C1002FE3BB /* TTCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				C49734821E9529C1002FE3BB /* AppDelegate.swift */,
+				C49734B01E9529CB002FE3BB /* Supporting Files */,
 				C49734841E9529C1002FE3BB /* ViewController.swift */,
 				C49734861E9529C1002FE3BB /* Main.storyboard */,
-				C49734891E9529C1002FE3BB /* Assets.xcassets */,
-				C497348B1E9529C1002FE3BB /* LaunchScreen.storyboard */,
-				C497348E1E9529C1002FE3BB /* Info.plist */,
+				C49734B11E952BB9002FE3BB /* TTCarousel.swift */,
+				C49734B31E952CAC002FE3BB /* TTCarouselIndicator.swift */,
 			);
 			path = TTCarousel;
 			sourceTree = "<group>";
@@ -123,6 +126,17 @@
 				C49734A41E9529C1002FE3BB /* Info.plist */,
 			);
 			path = TTCarouselUITests;
+			sourceTree = "<group>";
+		};
+		C49734B01E9529CB002FE3BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C49734821E9529C1002FE3BB /* AppDelegate.swift */,
+				C49734891E9529C1002FE3BB /* Assets.xcassets */,
+				C497348B1E9529C1002FE3BB /* LaunchScreen.storyboard */,
+				C497348E1E9529C1002FE3BB /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C49734851E9529C1002FE3BB /* ViewController.swift in Sources */,
+				C49734B21E952BB9002FE3BB /* TTCarousel.swift in Sources */,
 				C49734831E9529C1002FE3BB /* AppDelegate.swift in Sources */,
+				C49734B41E952CAD002FE3BB /* TTCarouselIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
