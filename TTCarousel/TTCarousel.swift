@@ -113,13 +113,16 @@ class TTCarousel: UIView {
         view?.frame = CGRect(x: space, y: 10, width: pageWidth, height: height - 60)
       }
       
-      titleLabel?.text = dataSource?.pageTitle(currentIndex: 0)
-      leftIndicator?.indicatorCount = 0
-      rightIndicator?.indicatorCount = pageCount - 1
+      updateTopItems(index: 0)
       scrollView?.contentOffset = CGPoint(x: 0, y: 0)
     }
   }
   
+  fileprivate func updateTopItems(index: Int) {
+    titleLabel?.text = dataSource?.pageTitle(currentIndex: index)
+    leftIndicator?.indicatorCount = index
+    rightIndicator?.indicatorCount = pageCount! - 1 - index
+  }
 }
 
 protocol TTCarouselDataSource {
@@ -144,8 +147,11 @@ extension TTCarousel: UIScrollViewDelegate {
     let width = self.frame.width - 2 * (pageSpace + clipWidth)
     targetContentOffset.pointee.x = (width + pageSpace) * CGFloat(currentIndex)
     
-    titleLabel?.text = dataSource?.pageTitle(currentIndex: currentIndex)
-    leftIndicator?.indicatorCount = currentIndex
-    rightIndicator?.indicatorCount = pageCount! - currentIndex - 1
+    updateTopItems(index: currentIndex)
+    
+    titleLabel?.alpha = 0
+    UIView.animate(withDuration: 1) { [weak self] in
+      self!.titleLabel?.alpha = 1
+    }
   }
 }
