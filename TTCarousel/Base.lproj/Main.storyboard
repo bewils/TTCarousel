@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqL-MV-9yH" customClass="TTCarousel" customModule="TTCarousel" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="120" width="414" height="316"/>
+                                <rect key="frame" x="0.0" y="60" width="414" height="376"/>
                                 <color key="backgroundColor" red="0.28627450980000002" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -30,7 +30,7 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dqL-MV-9yH" secondAttribute="bottom" constant="300" id="2HC-st-Wmu"/>
                             <constraint firstItem="dqL-MV-9yH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2nU-B3-A7B"/>
-                            <constraint firstItem="dqL-MV-9yH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Z2t-VF-nDT"/>
+                            <constraint firstItem="dqL-MV-9yH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Z2t-VF-nDT"/>
                             <constraint firstAttribute="trailing" secondItem="dqL-MV-9yH" secondAttribute="trailing" id="xGd-yj-CBJ"/>
                         </constraints>
                     </view>

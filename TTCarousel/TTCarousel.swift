@@ -141,8 +141,8 @@ extension TTCarousel: UIScrollViewDelegate {
       currentIndex -= 1
     }
     
-    let width = self.frame.width - 76
-    targetContentOffset.pointee.x = (width + 12) * CGFloat(currentIndex)
+    let width = self.frame.width - 2 * (pageSpace + clipWidth)
+    targetContentOffset.pointee.x = (width + pageSpace) * CGFloat(currentIndex)
     
     titleLabel?.text = dataSource?.pageTitle(currentIndex: currentIndex)
     leftIndicator?.indicatorCount = currentIndex
