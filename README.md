@@ -1,6 +1,6 @@
 ## TTCarousel
 
-![](https://img.shields.io/badge/Swift-3-orange.svg?style=flat-square)![](https://img.shields.io/badge/iOS-10-blue.svg?style=flat-square)
+![](https://img.shields.io/badge/Swift-3-orange.svg?style=flat-square) ![](https://img.shields.io/badge/iOS-10-blue.svg?style=flat-square)
 
 ### Demo
 
