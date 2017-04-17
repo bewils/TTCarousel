@@ -86,7 +86,9 @@ class TTCarousel: UIView {
     rightIndicator?.isLeft = false
     
     leftIndicator?.translatesAutoresizingMaskIntoConstraints = false
+    leftIndicator?.backgroundColor = self.backgroundColor
     rightIndicator?.translatesAutoresizingMaskIntoConstraints = false
+    rightIndicator?.backgroundColor = self.backgroundColor
     
     self.addSubview(leftIndicator!)
     self.addSubview(rightIndicator!)
@@ -138,6 +140,10 @@ class TTCarousel: UIView {
   }
   
   fileprivate func changeBackgroundColor() {
+    guard autoChangeBackgroundColor else {
+      return
+    }
+    
     let currentColor = imageColors[currentIndex]
     self.backgroundColor = currentColor
     self.leftIndicator?.backgroundColor = currentColor

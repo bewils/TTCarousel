@@ -13,14 +13,14 @@ class ViewController: UIViewController {
   @IBOutlet weak var carousel: TTCarousel!
   
   fileprivate let titles = ["Yukinoshita Yukino", "Hello world", "Before my body"]
-  fileprivate let images = [UIImage(named: "img1"), UIImage(named: "img2"), UIImage(named: "img3")]
+  fileprivate let images = [UIImage(named: "img1"), UIImage(named: "img1"), UIImage(named: "img1")]
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
     carousel.dataSource = self
-    carousel.autoChangeBackgroundColor = true
+//    carousel.autoChangeBackgroundColor = true
   }
 
   override func didReceiveMemoryWarning() {

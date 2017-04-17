@@ -45,3 +45,17 @@ Widget Structure
 ![](img2.png)
 
 So you can change th `clipWidth` and `pageSpace` to change the behavior of the carousel. If the clipWidth and pageSpace is confirmed the pageWidth is also confirmed.
+
+### Auto Change BackgroundColor
+
+![](./bgDemo.gif)
+
+```swift
+carousel.autoChangeBackgroundColor = true
+
+// Then implement the dataSource of get main color from which image
+func mainImage(pageIndex: Int) -> UIImage {
+  return images[pageIndex]!
+}
+```
+
