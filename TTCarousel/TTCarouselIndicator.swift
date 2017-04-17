@@ -14,7 +14,7 @@ class TTCarouselIndicator: UIView {
     didSet {
       self.updateSize()
       self.setNeedsDisplay()
-      if indicatorCount < oldValue {
+      if indicatorCount > oldValue {
         changeCountAnimation()
       } else {
         changeOpacityAnimation()
@@ -25,7 +25,7 @@ class TTCarouselIndicator: UIView {
   
   override func draw(_ rect: CGRect) {
     super.draw(rect)
-    UIColor(red: 73 / 255, green: 144 / 255, blue: 226 / 255, alpha: 1).setFill()
+    self.backgroundColor?.setFill()
     UIRectFill(rect)
     
     for i in 0..<indicatorCount {
@@ -54,11 +54,11 @@ class TTCarouselIndicator: UIView {
     
     var toX: CGFloat = 0
     if isLeft {
-      animationLayer.frame.origin = CGPoint(x: 10 * indicatorCount, y: 0)
-      toX = UIScreen.main.bounds.size.width - 100
+      animationLayer.frame.origin = CGPoint(x: UIScreen.main.bounds.size.width - 100, y: 0)
+      toX = CGFloat(10 * indicatorCount)
     } else {
-      animationLayer.frame.origin = CGPoint(x: -10 * indicatorCount, y: 0)
-      toX = 100 - UIScreen.main.bounds.size.width
+      animationLayer.frame.origin = CGPoint(x: 100 - UIScreen.main.bounds.size.width, y: 0)
+      toX = CGFloat(-10 * indicatorCount)
     }
     
     self.layer.addSublayer(animationLayer)
@@ -74,7 +74,6 @@ class TTCarouselIndicator: UIView {
     let opacityAnimation = CABasicAnimation(keyPath: "opacity")
     opacityAnimation.delegate = self
     opacityAnimation.fromValue = 1.0
-    opacityAnimation.byValue = 0.2
     opacityAnimation.toValue = 0.0
     opacityAnimation.duration = 0.6
     opacityAnimation.repeatCount = 1
@@ -87,7 +86,7 @@ class TTCarouselIndicator: UIView {
     let opacityAnimation = CABasicAnimation(keyPath: "opacity")
     opacityAnimation.fromValue = 0.0
     opacityAnimation.toValue = 1.0
-    opacityAnimation.duration = 1
+    opacityAnimation.duration = 1.5
     opacityAnimation.repeatCount = 1
     self.layer.add(opacityAnimation, forKey: "opacity")
   }

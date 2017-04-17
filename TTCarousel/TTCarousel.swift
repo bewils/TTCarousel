@@ -9,7 +9,6 @@
 import UIKit
 
 class TTCarousel: UIView {
-  
   // title items
   var titleLabel: UILabel?
   fileprivate var leftIndicator: TTCarouselIndicator?
@@ -19,16 +18,15 @@ class TTCarousel: UIView {
   
   fileprivate var currentIndex = 0
   fileprivate var pageCount: Int?
-  var dataSource: TTCarouselDataSource? {
-    didSet {
-      loadData()
-    }
-  }
+  var dataSource: TTCarouselDataSource?
   
   // 两块 page 间距
-  var pageSpace: CGFloat = 12
+  @IBInspectable var pageSpace: CGFloat = 12
   // 屏幕左右剪裁的大小
-  var clipWidth: CGFloat = 26
+  @IBInspectable var clipWidth: CGFloat = 26
+  var autoChangeBackgroundColor: Bool = false
+  
+  fileprivate var imageColors: [UIColor] = []
   
   // 从 storyboard 初始化控件
   required init?(coder aDecoder: NSCoder) {
@@ -45,6 +43,13 @@ class TTCarousel: UIView {
     initTitleLabel()
     // 初始化左右指示器
     initIndicator()
+  }
+
+  override func layoutSubviews() {
+    if dataSource != nil && (pageCount == nil || pageCount == 0) {
+      reloadData()
+    }
+    super.layoutSubviews()
   }
   
   private func initScrollViews() {
@@ -88,7 +93,8 @@ class TTCarousel: UIView {
   }
   
   // 设置代理即载入数据
-  private func loadData() {
+  func reloadData() {
+    imageColors = []
     // 判断 page 数量
     if let pageCount = dataSource?.numberOfPages(self) {
       // 设置 page 的宽度
@@ -99,9 +105,9 @@ class TTCarousel: UIView {
       
       self.pageCount = pageCount
       for i in 1...pageCount {
-        let view = dataSource?.pageView(self, pageSize: CGSize(width: pageWidth, height: height - 60), pageIndex: i)
+        let view = dataSource?.pageView(self, pageSize: CGSize(width: pageWidth, height: height - 60), pageIndex: i - 1)
         view?.translatesAutoresizingMaskIntoConstraints = false
-        let space = 38 + pageWidth * CGFloat(i - 1) + 12 * CGFloat(i - 1)
+        let space = (pageSpace + clipWidth) + pageWidth * CGFloat(i - 1) + 12 * CGFloat(i - 1)
         
         view?.layer.cornerRadius = 5
         view?.layer.shadowColor = UIColor.black.cgColor
@@ -111,9 +117,16 @@ class TTCarousel: UIView {
         
         self.scrollView?.addSubview(view!)
         view?.frame = CGRect(x: space, y: 10, width: pageWidth, height: height - 60)
+        
+        if autoChangeBackgroundColor {
+          let mainImage = dataSource?.mainImage?(pageIndex: i - 1)
+          imageColors.append((mainImage?.mainColor())!)
+        }
       }
+      print(imageColors)
       
       updateTopItems(index: 0)
+      changeBackgroundColor()
       scrollView?.contentOffset = CGPoint(x: 0, y: 0)
     }
   }
@@ -123,12 +136,20 @@ class TTCarousel: UIView {
     leftIndicator?.indicatorCount = index
     rightIndicator?.indicatorCount = pageCount! - 1 - index
   }
+  
+  fileprivate func changeBackgroundColor() {
+    let currentColor = imageColors[currentIndex]
+    self.backgroundColor = currentColor
+    self.leftIndicator?.backgroundColor = currentColor
+    self.rightIndicator?.backgroundColor = currentColor
+  }
 }
 
-protocol TTCarouselDataSource {
+@objc protocol TTCarouselDataSource {
   func numberOfPages(_ carouse: TTCarousel) -> Int
   func pageTitle(currentIndex: Int) -> String
   func pageView(_ carouse: TTCarousel, pageSize: CGSize, pageIndex: Int) -> UIView
+  @objc optional func mainImage(pageIndex: Int) -> UIImage
 }
 
 extension TTCarousel: UIScrollViewDelegate {
@@ -153,5 +174,7 @@ extension TTCarousel: UIScrollViewDelegate {
     UIView.animate(withDuration: 1) { [weak self] in
       self!.titleLabel?.alpha = 1
     }
+    
+    changeBackgroundColor()
   }
 }

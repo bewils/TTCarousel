@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C489C3121EA4D9BB006254C9 /* UIImage+MainColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C489C3111EA4D9BB006254C9 /* UIImage+MainColor.swift */; };
 		C49734831E9529C1002FE3BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49734821E9529C1002FE3BB /* AppDelegate.swift */; };
 		C49734851E9529C1002FE3BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49734841E9529C1002FE3BB /* ViewController.swift */; };
 		C49734881E9529C1002FE3BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49734861E9529C1002FE3BB /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C489C3111EA4D9BB006254C9 /* UIImage+MainColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+MainColor.swift"; sourceTree = "<group>"; };
 		C497347F1E9529C1002FE3BB /* TTCarousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTCarousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49734821E9529C1002FE3BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C49734841E9529C1002FE3BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				C49734861E9529C1002FE3BB /* Main.storyboard */,
 				C49734B11E952BB9002FE3BB /* TTCarousel.swift */,
 				C49734B31E952CAC002FE3BB /* TTCarouselIndicator.swift */,
+				C489C3111EA4D9BB006254C9 /* UIImage+MainColor.swift */,
 			);
 			path = TTCarousel;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C49734851E9529C1002FE3BB /* ViewController.swift in Sources */,
+				C489C3121EA4D9BB006254C9 /* UIImage+MainColor.swift in Sources */,
 				C49734B21E952BB9002FE3BB /* TTCarousel.swift in Sources */,
 				C49734831E9529C1002FE3BB /* AppDelegate.swift in Sources */,
 				C49734B41E952CAD002FE3BB /* TTCarouselIndicator.swift in Sources */,
@@ -530,6 +534,7 @@
 				C49734A91E9529C1002FE3BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C49734AA1E9529C1002FE3BB /* Build configuration list for PBXNativeTarget "TTCarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +543,7 @@
 				C49734AC1E9529C1002FE3BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C49734AD1E9529C1002FE3BB /* Build configuration list for PBXNativeTarget "TTCarouselUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +552,7 @@
 				C49734AF1E9529C1002FE3BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

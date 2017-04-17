@@ -13,12 +13,14 @@ class ViewController: UIViewController {
   @IBOutlet weak var carousel: TTCarousel!
   
   fileprivate let titles = ["Yukinoshita Yukino", "Hello world", "Before my body"]
+  fileprivate let images = [UIImage(named: "img1"), UIImage(named: "img2"), UIImage(named: "img3")]
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
     carousel.dataSource = self
+    carousel.autoChangeBackgroundColor = true
   }
 
   override func didReceiveMemoryWarning() {
@@ -38,7 +40,7 @@ extension ViewController: TTCarouselDataSource {
   
   func pageView(_ carouse: TTCarousel, pageSize: CGSize, pageIndex: Int) -> UIView {
     let view = UIView()
-    let image = UIImageView(image: UIImage(named: "img1"))
+    let image = UIImageView(image: images[pageIndex])
     image.contentMode = .scaleAspectFill
     image.frame = CGRect(x: 0, y: 0, width: pageSize.width, height: pageSize.height)
     image.layer.cornerRadius = 5
@@ -46,5 +48,9 @@ extension ViewController: TTCarouselDataSource {
     
     view.addSubview(image)
     return view
+  }
+  
+  func mainImage(pageIndex: Int) -> UIImage {
+    return images[pageIndex]!
   }
 }
