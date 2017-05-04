@@ -14,7 +14,7 @@ extension UIImage {
     // make image scale to 50 * 50
     let newSize = CGSize(width: 50, height: 50)
     let colorSpace = CGColorSpaceCreateDeviceRGB()
-    let context = CGContext(data: nil, width: Int(newSize.width), height: Int(newSize.height), bitsPerComponent: 8, bytesPerRow: Int(newSize.width) * 4, space: colorSpace, bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)
+    let context = CGContext(data: nil, width: Int(newSize.width), height: Int(newSize.height), bitsPerComponent: 8, bytesPerRow: Int(newSize.width) * 4, space: colorSpace, bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue)
     
     let drawRect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
     context?.draw(self.cgImage!, in: drawRect)
@@ -44,7 +44,7 @@ extension UIImage {
     for color in set {
       let colorArray = (color as! NSArray) as! [Int]
       let allColor = colorArray[0] + colorArray[1] + colorArray[2]
-      if allColor <= 200 || allColor >= 625 {
+      if allColor <= 250 || allColor >= 625 {
         continue
       }
       
